@@ -6,6 +6,7 @@ screen = pygame.display.set_mode((800, 500))
 pygame.display.set_caption('Super Engg Girlies')
 clock = pygame.time.Clock()
 test_font = pygame.font.Font('fonts/font.otf', 50)
+game_active = True
 
 background = pygame.image.load('graphics/16431.jpg').convert()
 ground = pygame.Surface((800, 50))
@@ -31,24 +32,28 @@ while True:
                 #  if player_rect.bottom == 450:
                     player_gravity = -20  # Remove for mario game
     # draw stuff :p
-    screen.blit(background, (0, 0))
-    screen.blit(ground, (0, 450))
-    screen.blit(text, (250, 75))
-    if homework_rect.left < -100:
-        homework_rect.left = 800
-    else:
-        homework_rect.left -= 4
-    screen.blit(homework, homework_rect)
+    if game_active:
+        screen.blit(background, (0, 0))
+        screen.blit(ground, (0, 450))
+        screen.blit(text, text_rect)
+        if homework_rect.left < -100:
+            homework_rect.left = 800
+        else:
+            homework_rect.left -= 4
+        screen.blit(homework, homework_rect)
 
-    player_gravity +=1
-    player_rect.bottom += player_gravity
-    if player_rect.bottom >=450:
-        player_rect.bottom = 450
-    screen.blit(player, player_rect)
+        player_gravity +=1
+        player_rect.bottom += player_gravity
+        if player_rect.bottom >=450:
+            player_rect.bottom = 450
+        screen.blit(player, player_rect)
 
-    if homework_rect.colliderect(player_rect):
-        pygame.quit()
-        exit()
+        if homework_rect.colliderect(player_rect):
+            game_active = False
+            screen.fill('grey1')
+            text = test_font.render('Game Over', True, 'White')
+            text_rect = text.get_rect(center=(400, 225))
+            screen.blit(text, text_rect)
 
     # if player_rect.colliderect(homework_rect):
     pygame.display.update()
