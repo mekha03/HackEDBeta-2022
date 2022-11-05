@@ -60,9 +60,10 @@ while True:
             game_active = False
             if game_active == False:
                 screen.fill('grey1')
-                text = test_font.render('Game Over', True, 'White')
-                text2 = test_font.render('Press Space-bar to', True, 'White')
-                text3 = test_font.render('RESTART', True, 'White')
+                text_font = pygame.font.Font(None, 50)
+                text = text_font.render('Game Over', True, 'White')
+                text2 = text_font.render('Press Space-bar to', True, 'White')
+                text3 = text_font.render('RESTART', True, 'White')
                 text_rect = text.get_rect(center=(400, 200))
                 text2_rect = text.get_rect(center=(325, 275))
                 text3_rect = text.get_rect(center=(400, 350))
