@@ -3,7 +3,7 @@ from sys import exit
 
 pygame.init()
 screen = pygame.display.set_mode((800, 500))
-pygame.display.set_caption('Super Engg Girlies')
+pygame.display.set_caption('Engineering Run')
 clock = pygame.time.Clock()
 test_font = pygame.font.Font('fonts/font.otf', 50)
 text_font = pygame.font.Font(None, 50)
