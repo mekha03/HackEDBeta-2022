@@ -17,10 +17,11 @@ Team Members: Mekha George, Palak Sharma, Vallari Tanjore, Esha Bhantooa
 
 **Running Instructions:**
   
-  1. i) In your Python Editior, do to project settings and add 'pygame' as an interpeter 
+  1. 
+     i) In your Python Editior, do to project settings and add 'pygame' as an interpeter 
        since it doens't automatically come with Python
-       - or -
-     ii) Type 'pip install pygame' (no quotations) into your command line
+     
+     ii) Or type 'pip install pygame' (no quotations) into your command line
     
   2. Open the files and run the game
     --> Ensure that all files are in the same location as main.py, 
