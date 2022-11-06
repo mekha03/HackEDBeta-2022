@@ -1,8 +1,11 @@
 # HackEDBeta Readme
 
 Project Name: Engineering Run
+
 Team Name: Syntax Error
+
 Team Members: Mekha George, Palak Sharma, Vallari Tanjore, Esha Bhantooa
+
 
 **Project Description:**
 
@@ -11,6 +14,7 @@ Team Members: Mekha George, Palak Sharma, Vallari Tanjore, Esha Bhantooa
       If you hit an assignment, the game ends and you are prompted to restart by hitting 
       the spacebar again. It is coded using the pygame module in Python.
       
+
 **Running Instructions:**
   
   1. i) In your Python Editior, do to project settings and add 'pygame' as an interpeter 
