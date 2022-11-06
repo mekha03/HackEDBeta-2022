@@ -2,7 +2,7 @@
 
 Project Name: Engineering Run
 Team Name: Syntax Error
-Team Members: Mekha George, Palak Sharma, Vallari Tanjore
+Team Members: Mekha George, Palak Sharma, Vallari Tanjore, Esha Bhantooa
 
 Project Description:
   --> This is a simple 'Runner'-style game. You use the spacebar to jump, 
