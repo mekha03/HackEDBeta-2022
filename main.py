@@ -52,7 +52,7 @@ while True:
             homework_rect.left = 800
         else:
             homework_rect.left -= 4
-        score_text = text_font.render(str(score), True, 'Black')
+        score_text = text_font.render('Score: '+str(score), True, 'Black')
         score_rect = score_text.get_rect(center=(400, 175))
         screen.blit(homework, homework_rect)
         screen.blit(score_text, score_rect)
@@ -60,6 +60,8 @@ while True:
         player_rect.bottom += player_gravity
         if player_rect.bottom >= 450:
             player_rect.bottom = 450
+        if player_rect.top <=  0:
+            player_rect.top = 0
         screen.blit(player, player_rect)
 
         if homework_rect.colliderect(player_rect):
