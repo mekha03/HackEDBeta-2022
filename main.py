@@ -13,7 +13,7 @@ background = pygame.image.load('graphics/16431.jpg').convert()
 ground = pygame.Surface((800, 50))
 ground.fill('snow')
 
-text = test_font.render('Super Engg Girlies', True, 'Black')
+text = test_font.render('Engineering Run', True, 'Black')
 text_rect = text.get_rect(center=(400, 100))
 
 homework = pygame.image.load('graphics/homework-.png').convert_alpha()
