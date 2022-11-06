@@ -39,7 +39,7 @@ while True:
             if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
                 game_active = True
                 homework_rect.left = 800
-                text = test_font.render('Super Engg Girlies', True, 'Black')
+                text = test_font.render('Engineering Run', True, 'Black')
                 text_rect = text.get_rect(center=(400, 100))
 
     # draw stuff :p
