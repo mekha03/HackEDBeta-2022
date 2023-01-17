@@ -18,7 +18,7 @@ Team Members: Mekha George, Palak Sharma, Vallari Tanjore, Esha Bhantooa
 **Running Instructions:**
   
   1. 
-     i) In your Python Editior, do to project settings and add 'pygame' as an interpeter 
+     i) In your Python Editor, go to project settings and add 'pygame' as an interpeter 
        since it doens't automatically come with Python
      
      ii) Or type 'pip install pygame' (no quotations) into your command line
